@@ -1,0 +1,11 @@
+.removeButton {
+    float: right;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    background: lightcoral;
+}
+
+.removeButton:hover {
+    background-color: lightpink;
+}

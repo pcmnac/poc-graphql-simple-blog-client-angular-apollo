@@ -1,0 +1,11 @@
+form {
+    padding: 10px;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+form input {
+    margin-bottom: 10px;
+}

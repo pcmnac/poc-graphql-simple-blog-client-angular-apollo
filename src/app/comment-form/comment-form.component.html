@@ -1,0 +1,12 @@
+<form (ngSubmit)="addComment()" #commentForm="ngForm">
+    <label htmlFor="name">Name</label><br/>
+    <input id="name" name="name" type="text" [(ngModel)]="model.name" />
+    <br/>
+    <label htmlFor="email">Email</label><br/>
+    <input id="email" name="email" type="email" [(ngModel)]="model.email"/>
+    <br/>
+    <label htmlFor="body">Comment</label><br/>
+    <textarea rows="5" cols="100" id="body" name="body" [(ngModel)]="model.body"></textarea>
+    <br/><br/>
+    <button>Send!</button>
+</form>

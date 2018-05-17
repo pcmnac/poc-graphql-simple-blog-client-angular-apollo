@@ -1,0 +1,13 @@
+<div *ngIf="post">
+    <h2>{{ post.title }}</h2>
+    <p class="post-body">
+        {{ post.body }}
+    </p>
+    <a routerLink="/">Back</a>
+    <h4>Add Comment:</h4>
+    <app-comment-form [postId]="post.id" (onAdded)="handleCommentAdded()"></app-comment-form>
+    <h4>Comments:</h4>
+    <app-comment *ngFor="let c of post.comments | reverse" [comment]="c" (onRemoved)="handleCommentRemoved()"></app-comment>
+    <a routerLink="/">Back</a>
+</div>
+<p *ngIf="loading">Loading...</p>
